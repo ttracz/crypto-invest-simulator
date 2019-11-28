@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100vh;
+    width: 200px;
+    background: #212121;
+    color: white;
+    position: fixed;
+    z-index: 999;
+}
+
+.sidebar .logo {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+
+.sidebar .links a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .links a:hover {
+    color: #09d3ac;
+}
+
+.sidebar .links .link {
+    margin: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.sidebar .links .link i {
+    width: 25px;
+    text-align: center;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #f4f3ef;
+}
+
+.dashboard .content {
+    margin-left: 200px;
+}
+
+/* MARKET */
+
+.currencyList {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.currencyList .currencyItem {
+    border: 1px solid #282c3450;
+    box-shadow: 1px 1px 3px #282c3450;
+    margin: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.currencyList .currencyItem .header {
+    line-height: 50px;
+}
+
+.currencyList .currencyItem img {
+    max-width: 20px;
+    margin: 10px;
+}
+
+.currencyList .currencyItem .name {
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.currencyList .currencyItem span.fullName {
+    font-size: 0.75rem;
+}
+
+.currencyList .currencyItem .currentPrice {
+    font-size: 0.75rem;
+}
+
+.currencyList .currencyItem .marketCap {
+    font-size: 0.75rem;
+}
