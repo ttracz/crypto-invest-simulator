@@ -2,6 +2,13 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    background: #f4f3ef !important;
+}
+
+button {
+    letter-spacing: 2px;
+    font-size: 0.875rem !important;
+    text-transform: uppercase !important;
 }
 
 /* SIDEBAR */
@@ -44,6 +51,35 @@ body {
 .sidebar .links .link i {
     width: 25px;
     text-align: center;
+}
+
+.sidebar .user {
+    font-size: 0.875rem;
+    letter-spacing: -0.25px;
+    text-align: center;
+    line-height: 25px;
+    margin: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid white;
+}
+
+.sidebar .user span.username, .sidebar .user span.balance {
+    font-weight: bold;
+    color: #09d3ac;
+}
+
+.sidebar .user .currency {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #09d3ac;
+}
+
+.sidebar .user .currency.isPresent {
+    text-align: left;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #09d3ac;
 }
 
 /* DASHBOARD */
@@ -91,14 +127,60 @@ body {
     line-height: 30px;
 }
 
-.currencyList .currencyItem span.fullName {
+.currencyList .currencyItem span.fullName,
+.currencyList .currencyItem .currentPrice,
+.currencyList .currencyItem .marketCap,
+.currencyList .currencyItem .max24h,
+.currencyList .currencyItem .min24h {
     font-size: 0.75rem;
 }
 
-.currencyList .currencyItem .currentPrice {
-    font-size: 0.75rem;
+.currencyList .currencyItem .buyRow {
+    margin-top: 5px;
 }
 
-.currencyList .currencyItem .marketCap {
-    font-size: 0.75rem;
+.currencyList .currencyItem .buyRow .inputAmount, .currencyList .currencyItem .buyRow button.btn {
+    display: inline;
+}
+
+.currencyList .currencyItem .buyRow button.btn{
+    margin-top: -5px;
+}
+
+.currencyList .currencyItem .buyRow .inputAmount{
+    width: 50%;
+    height: 31px;
+    line-height: 31px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+/*! REGISTER !*/
+
+.register {
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 300px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #00000050;
+    padding: 15px;
+}
+
+.register button {
+    margin-top: 15px;
+}
+
+.register label {
+    font-size: 0.875rem;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.register a {
+    font-size: 0.875rem;
+}
+
+.register .buttonContainer {
+    text-align: center;
 }
